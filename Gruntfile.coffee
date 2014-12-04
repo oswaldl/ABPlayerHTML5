@@ -21,6 +21,8 @@ module.exports = (grunt) ->
           {expand: true, cwd:'src/js/', src: ['*.js'],  dest:'build/js/'}
           {expand: true, cwd:'src/', src: ['*.html', '*.xml'],  dest:'build/'}
           {expand: true, cwd:'src/demos', src: ['*/*'],  dest:'build/demos/'}
+          {expand: true, cwd:'src/views', src: ['*.html'],  dest:'build/views/'}
+          {expand: true, cwd:'bower_components', src: ['*/*'],  dest:'build/bower_components/'}
         ]
     
     # Auto-prefix CSS properties using Can I Use?
